@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs16
+FROM nikolaik/python-nodejs:python3.9-nodejs18
 
 # Updating Packages
 RUN apt update && apt upgrade -y
@@ -11,8 +11,8 @@ COPY requirements.txt /requirements.txt
 RUN cd /
 RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /MusicPlayer
-WORKDIR /MusicPlayer
+RUN mkdir /Music-Userbot
+WORKDIR /Music-Userbot
 COPY startup.sh /startup.sh
 
 # Running Music Player Bot
