@@ -1,7 +1,7 @@
 echo ">> FETCHING UPSTREAM..."
 git clone https://github.com/Onlymeriz/Music-Userbot /Music-Userbot
 echo ">> INSTALLING REQUIREMENTS..."
-cd /MusicPlayer
+cd /Music-Userbot
 pip3 install -U -r requirements.txt
 echo ">> STARTING MUSIC PLAYER USERBOT..."
 clear
